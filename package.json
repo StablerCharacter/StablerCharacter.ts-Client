@@ -1,0 +1,17 @@
+{
+  "name": "stablercharactertsclient",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/classic.ts",
+  "main": "dist/classic.ts",
+  "scripts": {
+    "watch": "parcel watch",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.0.1"
+  }
+}
