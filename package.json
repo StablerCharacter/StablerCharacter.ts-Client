@@ -2,16 +2,14 @@
   "name": "stablercharactertsclient",
   "version": "1.0.0",
   "description": "",
-  "source": "src/classic.ts",
-  "main": "dist/classic.ts",
+  "main": "dist/index.html",
   "scripts": {
-    "watch": "parcel watch",
-    "build": "parcel build"
+    "build": "rollup --config rollup.config.js"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "parcel": "^2.0.1"
+    "@rollup/plugin-typescript": "^8.3.0"
   }
 }
