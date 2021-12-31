@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StablerCharacter.ts Test</title>
+</head>
+<body>
+    <script type="module" defer>
+        import { initializeGame } from "./classic.bundle.js";
+        import { GameManager, StoryManager, Chapter, Branch, Dialog } from "./story.bundle.js";
+        import GameScene from "./GameScene.bundle.js";
+        initializeGame(
+            new GameManager(
+                new StoryManager(
+                    new Chapter(
+                        "Chapter 1",
+                        {
+                            main: new Branch(
+                                new Dialog("Hello, world!")
+                            )
+                        }
+                    )
+                ),
+                new GameScene({
+                    onStoryEnd: () => {
+                        console.log("Story ended!");
+                    }
+                })
+            )
+        );
+    </script>
+</body>
+</html>
